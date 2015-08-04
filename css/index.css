@@ -1,0 +1,40 @@
+body {
+  height: 100%;
+  background: url('../images/humming_bird.gif') rgb(105, 105, 107);
+  background-repeat: no-repeat;
+  background-position: left top;
+  font: 400 1em/1.38 Helvetica;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  float: none;
+  width: 465px;
+  height: 245px;
+  margin: 17px 400px 0 600px;
+}
+
+.text {
+  position: relative;
+  float: left;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(0, 0, 0);
+}
+
+.text-2 p {
+  margin-bottom: 1em;
+}
+
+.text-1 {
+  z-index: 0;
+  margin-top: -17px;
+}
+
+.text-2 {
+  clear: both;
+  z-index: 1;
+  width: 465px;
+  margin-top: -29px;
+}
