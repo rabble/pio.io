@@ -1,0 +1,30 @@
+[role='layout'].landing-card
+  margin: 2rem 0
+
+  .landing-card-header, .landing-card-main
+    overflow: hidden
+    clear: both
+    margin: 1rem 0
+
+  a
+    &:hover
+      text-decoration: none
+      color: $black
+
+  @media screen and (min-width: $small)
+  @media screen and (min-width: $medium)
+    margin: 8rem 0
+    padding-left: 8rem
+
+    .landing-card-header
+      float: left
+      width: 7rem
+      margin-left: -8rem
+      clear: none
+
+    .landing-card-main
+      float: right
+      clear: none
+
+  @media screen and (min-width: $large)
+  @media screen and (min-width: $giant)

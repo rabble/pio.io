@@ -1,0 +1,39 @@
+body
+  background: $white
+  color: $black
+  font-family: $mono
+  font-weight: 400
+  font-size: ms(0)
+  line-height: 1.625
+
+hr
+  border-width: 1px 0 0
+  border-style: solid
+  margin: 1rem 0
+  padding: 0
+  height: 1px
+
+::-moz-selection
+  background: $red
+  color: $white
+
+::selection
+  background: $red
+  color: $white
+
+// BLOCKS
+
+[role='wrapper']
+  clear: both
+  overflow: hidden
+  padding: 0 1rem
+
+  @media screen and (min-width: $small)
+  @media screen and (min-width: $medium)
+    padding: 0
+    margin: 0 auto
+    width: 96%
+    max-width: 56rem
+
+  @media screen and (min-width: $large)
+  @media screen and (min-width: $giant)

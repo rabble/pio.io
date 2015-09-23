@@ -1,0 +1,35 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %title= current_page.data.title || "Pio"
+    = stylesheet_link_tag "pio"
+    = javascript_include_tag  "all"
+  %body{class: page_classes}
+    :coffeescript
+      $ ->
+        $('svg #circle-1').on 'mouseover', (e) ->
+          $('#circle-1').style('fill', '#ffffff')
+
+        $('svg #circle-2').on 'mouseover', (e) ->
+          $('#circle-').style('fill', '#ffffff')
+
+        $('svg #circle-3').on 'mouseover', (e) ->
+          $('#circle-1').style('fill', '#ffffff')
+
+    %div.tiny-wrapper{role: 'layout'}
+      %div.landing-card{role: 'layout'}
+        %header.landing-card-header
+          %a.logo-link{href: '/'}
+            %div.logo
+              %svg{:height => "120px", :version => "1.1", :viewbox => "0 0 108 120", :width => "108px", :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink"}
+                %g#Pio{:transform => "translate(71.326606, 47.075318) rotate(-330.000000) translate(-71.326606, -47.075318) translate(11.826606, -7.424682)"}
+                  %circle#circle-1{:cx => "63.7399384", :cy => "12.5774488", :fill => "#32263E", :r => "12"}
+                  %circle#circle-2{:cx => "106.625575", :cy => "96.562172", :fill => "#32263E", :r => "12"}
+                  %circle#circle-3{:cx => "12.8805807", :cy => "91.1339746", :fill => "#32263E", :r => "12"}
+                  %path#line-1{:d => "M53.4252892,28.2698584 L23.5145553,75.6127354", :stroke => "#32263E", "stroke-linecap" => "square", "stroke-width" => "6"}
+                  %path#line-2{:d => "M87.6435927,95.8993464 L31.7292529,92.8031216", :stroke => "#32263E", "stroke-linecap" => "square", "stroke-width" => "6"}
+                  %path#line-3{:d => "M72.4641016,29.6076951 L98.0073219,79.4428624", :stroke => "#32263E", "stroke-linecap" => "square", "stroke-width" => "6"}
+
+        %main.landing-card-main= yield
