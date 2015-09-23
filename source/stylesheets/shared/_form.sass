@@ -1,0 +1,51 @@
+// single field
+
+form
+  input[type='text'], input[type='email'], input[type='tel'], input[type='password']
+    background: $white
+    color: $black
+    font-family: $mono
+    border: 0
+    border-radius: 0
+    font-size: ms(0)
+    line-height: ms(1)
+    padding: 0.5rem
+    text-align: center
+
+  input[type='submit']
+    background: $black
+    color: $white
+    font-family: $mono
+    border: 0
+    border-radius: 0
+    font-size: ms(0)
+    line-height: ms(1)
+    padding: 0.5rem
+    &:hover
+      background: $red
+      cursor: pointer
+
+.single-field
+  input
+    display: block
+    width: 100%
+
+  .title
+    margin: 0 0 0.5rem
+
+  .field
+    width: 100%
+  .action
+    width: 100%
+
+  @media screen and (min-width: $small)
+  @media screen and (min-width: $medium)
+    padding-right: 8rem
+    .field
+      float: left
+    .action
+      float: right
+      width: 8rem
+      margin-right: -8rem
+  @media screen and (min-width: $large)
+  @media screen and (min-width: $giant)
