@@ -1,0 +1,60 @@
+.logo-link
+  text-decoration: none
+  color: rgba($black,0)
+
+  @media screen and (min-width: $small)
+  @media screen and (min-width: $medium)
+  @media screen and (min-width: $large)
+  @media screen and (min-width: $giant)
+
+.logo
+  width: 100%
+  svg
+    display: block
+    width: auto
+    height: 4rem
+    margin: 0 auto
+
+    path
+      stroke: rgba($black,0.325)
+      stroke-width: 6
+
+    circle
+      transition: all 1s
+      &:hover
+        fill: $white
+
+  @media screen and (min-width: $small)
+  @media screen and (min-width: $medium)
+    svg
+      width: 60%
+      height: auto
+  @media screen and (min-width: $large)
+  @media screen and (min-width: $giant)
+
+.logotype
+  text-align: center
+  display: block
+  border-radius: 3px
+  line-height: ms(4)
+  margin: 0 auto
+  overflow: hidden
+  color: rgba($black,0.325)
+  transition: 0.25s color
+  font-weight: 400
+  strong
+    font-size: ms(2)
+    font-weight: 800
+    color: $black
+    text-transform: uppercase
+    letter-spacing: 0.1em
+  em
+    font-size: ms(0)
+    font-style: normal
+    color: rgba($black,0.00)
+
+  @media screen and (min-width: $small)
+  @media screen and (min-width: $medium)
+    text-align: left
+  @media screen and (min-width: $large)
+  @media screen and (min-width: $giant)
