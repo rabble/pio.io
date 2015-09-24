@@ -3,9 +3,12 @@
   %head
     %meta{charset: "utf-8"}/
     %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
-    %title= current_page.data.title || "Pio"
+    %title= current_page.data.title || "Decentralised publishing and communication | Pio"
     = stylesheet_link_tag "pio"
     = javascript_include_tag  "all"
+    %meta{name: "viewport", content: "initial-scale=1"}/
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"
   %body{class: page_classes}
     :coffeescript
       $ ->
